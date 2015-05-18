@@ -1,0 +1,39 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+.calculator {
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: lightgrey;
+  padding: 5px; }
+  .calculator::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.keypad-button {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  background-color: #f45440;
+  color: white; }
+  .keypad-button:last-child {
+    margin-right: 0; }
+  .keypad-button:nth-child(4n) {
+    margin-right: 0; }
+  .keypad-button:nth-child(4n+1) {
+    clear: left; }
+
+.display {
+  text-align: right;
+  border-bottom: black;
+  border-style: solid;
+  margin-bottom: 20px;
+  padding-right: 5px; }
