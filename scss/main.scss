@@ -1,23 +1,25 @@
 @import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
 @import '../bower_components/neat/app/assets/stylesheets/neat';
-
+body {
+  background-color: rgba(133, 211, 224, 1);
+}
 .calculator {
   @include outer-container(450px);
   background-color: lightgrey;
   padding:5px;
 }
-
 .keypad-button {
   @include span-columns(3);
   @include omega(4n);
   background-color: rgba(244, 84, 64, 1);
   color: white;
 }
-
 .display {
   text-align: right;
-  border-bottom: black;
+  border: black;
   border-style: solid;
   margin-bottom: 20px;
   padding-right: 5px;
+  background-color: grey;
+  color: white;
 }
